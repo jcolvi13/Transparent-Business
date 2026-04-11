@@ -1,21 +1,17 @@
-from openai import OpenAI
+from openrouter import OpenRouter
 import os
-import sys
+from dotenv import load_dotenv
 
-api_key = os.getenv("OPENROUTER_API_KEY")
+load_dotenv()
 
-if not api_key:
-    print("Error: OPENROUTER_API_KEY environment variable not set.")
-    sys.exit(1)
-
-client = OpenAI(
-    api_key=api_key,
-    base_url="https://openrouter.ai/api/v1"
-)
-
-response = client.chat.completions.create(
-    model="openai/gpt-4o-mini",
-    messages=[{"role": "user", "content": "Hello!"}]
-)
+with OpenRouter(
+    api_key=os.getenv("OPENROUTER_API_KEY")
+) as client:
+    response = client.chat.send(
+        model="openrouter/free",
+        messages=[
+            {"role": "user", "content": "Hello!"}
+        ]
+    )
 
 print(response.choices[0].message.content)
