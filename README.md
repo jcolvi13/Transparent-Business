@@ -9,4 +9,5 @@ Phase3.py : Introduces a basic agent loop where the model can reply with COMMAND
 Phase4.py : cleans up agent loop and make it more reliable
 
 Phase5.py : Adds STOCKAGENT.md and COMPARESKILLS.md (will later add ETHICSSKILLS.md) to specifically have the agent grab stock data (and ethical data) from specified sources and output a short summary comparing stocks (For Phase 2 MVP progress we are just testing the STOCKSKILLS accuracy and reporting of up to date stock data to the user)
+
 Phase6.py creates local web app for cleaner interface outside of terminal
