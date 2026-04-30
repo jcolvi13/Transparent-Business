@@ -29,4 +29,4 @@ Running these commands will help install necessary packages
    
 4. With all files in the same folder, run mvp.py and click on the link created in the terminal (if link fails run mvp.py again and it should work)
 
-5. Interface with the stock agent with questions regarding stocks and stock performance and stock comparisons. (The current model can be a little language sensitive or needs extra clarificattion)
+5. Interface with the stock agent with questions regarding stocks and stock performance and stock comparisons. (The current model can be a little language sensitive and may need extra clarificattion)
