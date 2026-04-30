@@ -21,7 +21,7 @@ DEMO INSTRUCTIONS:
   
 3. Download necessary python packages. (May take trial and error or Codex to confirm all packages are sucessfully installed)
 
-These running these commands will help install necessary packages
+Running these commands will help install necessary packages
 
    python -m pip install python-dotenv
    python -m pip install flask python-dotenv openrouter
