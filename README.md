@@ -24,6 +24,7 @@ DEMO INSTRUCTIONS:
 Running these commands will help install necessary packages
 
    python -m pip install python-dotenv
+   
    python -m pip install flask python-dotenv openrouter
    
 4. With all files in the same folder, run mvp.py and click on the link created in the terminal (if link fails run mvp.py again and it should work)
